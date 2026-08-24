@@ -1,3 +1,5 @@
+@import url(all.min.css);
+
 :root {
             --bg: #070b14;
             --bg-soft: #0d1320;
@@ -2852,4 +2854,78 @@
 html {
     scrollbar-width: thin;
     scrollbar-color: #7c5cff #070b14;
+}
+
+
+/* =========================================
+   BRAND ICON COLORS
+========================================= */
+
+.icon-python {
+    color: #3776AB;
+    filter: drop-shadow(0 0 8px rgba(55, 118, 171, 0.35));
+}
+
+.icon-phone {
+    color: #22C55E;
+    filter: drop-shadow(0 0 8px rgba(34, 197, 94, 0.3));
+}
+
+.icon-location {
+    color: #EF4444;
+    filter: drop-shadow(0 0 8px rgba(239, 68, 68, 0.3));
+}
+
+.icon-github {
+    color: #F0F0F0;
+    filter: drop-shadow(0 0 8px rgba(240, 240, 240, 0.2));
+}
+
+.icon-telegram {
+    color: #229ED9;
+    filter: drop-shadow(0 0 8px rgba(34, 158, 217, 0.35));
+}
+
+.icon-instagram {
+    color: #E4405F;
+    filter: drop-shadow(0 0 8px rgba(228, 64, 95, 0.35));
+}
+
+.icon-email {
+    color: #EA4335;
+    filter: drop-shadow(0 0 8px rgba(234, 67, 53, 0.3));
+}
+
+.icon-javascript {
+    color: #F7DF1E;
+    filter: drop-shadow(0 0 8px rgba(247, 223, 30, 0.3));
+}
+
+.icon-html {
+    color: #E34F26;
+    filter: drop-shadow(0 0 8px rgba(227, 79, 38, 0.35));
+}
+
+.icon-css {
+    color: #1572B6;
+    filter: drop-shadow(0 0 8px rgba(21, 114, 182, 0.35));
+}
+
+
+/* =========================================
+   ICON HOVER
+========================================= */
+
+.contact-item i,
+.skill-item i,
+.social-link i {
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
+
+.contact-item:hover i,
+.skill-item:hover i,
+.social-link:hover i {
+    transform: translateY(-3px) scale(1.12);
 }
