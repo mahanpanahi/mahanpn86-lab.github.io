@@ -441,3 +441,57 @@ if (
     );
 
 }
+
+
+
+const hamburger =
+    document.getElementById("hamburger");
+
+const navMenu =
+    document.getElementById("navMenu");
+
+
+hamburger.addEventListener("click", () => {
+
+    hamburger.classList.toggle("active");
+
+    navMenu.classList.toggle("active");
+
+});
+
+
+document
+    .querySelectorAll(".nav-menu .nav-links a")
+    .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            hamburger.classList.remove("active");
+
+            navMenu.classList.remove("active");
+
+        });
+
+    });
+
+    document.addEventListener("click", (event) => {
+
+    const clickedInsideMenu =
+        navMenu.contains(event.target);
+
+    const clickedHamburger =
+        hamburger.contains(event.target);
+
+
+    if (
+        !clickedInsideMenu &&
+        !clickedHamburger
+    ) {
+
+        hamburger.classList.remove("active");
+
+        navMenu.classList.remove("active");
+
+    }
+
+});
